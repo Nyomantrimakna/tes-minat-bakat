@@ -27,7 +27,7 @@ function RegisterForm() {
       // do something after successful registration
     } catch (error) {
       console.error(error);
-      console.log("gagal melakukan register");
+      alert("gagal melakukan register");
       // handle error case here
     }
   };

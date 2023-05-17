@@ -24,6 +24,11 @@ const Login = () => {
   };
 
   const handleLogin = () => {
+    if (!username || !password) {
+      alert("Username dan password harus diisi!");
+      return;
+    }
+
     axios
       .post(
         "https://asia-southeast1-capstone-project-382606.cloudfunctions.net/app/api/login",
@@ -42,7 +47,7 @@ const Login = () => {
       .catch((error) => {
         // jika login gagal, tampilkan pesan kesalahan di sini
         console.log(error);
-        console.log("gagal melakukan login");
+        alert("Silahkan login dengan akun yang sudah terdaftar!");
       });
   };
 
