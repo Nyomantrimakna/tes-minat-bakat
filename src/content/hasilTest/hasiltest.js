@@ -1,12 +1,9 @@
 import React from "react";
-import axios from "axios";
 import "./hasiltest.css";
 import Navbar from "../../component/navbar/navbar";
 import Footer from "../../component/footer/footer";
-import { Link, useNavigate } from "react-router-dom";
 
 function HasilTest() {
-  const navigate = useNavigate();
   const hasilTest = JSON.parse(localStorage.getItem("userTest"));
 
   if (!hasilTest) {

@@ -2,7 +2,6 @@ import React from "react";
 import ImageOne from "../../../component/image/img_home1.png";
 import ImageTwo from "../../../component/image/img_home2.png";
 import ImageTree from "../../../component/image/img_home3.png";
-import { Link } from "react-router-dom";
 import "./mainContent.css";
 
 function MainContent() {

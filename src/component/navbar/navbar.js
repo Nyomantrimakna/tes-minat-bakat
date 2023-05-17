@@ -6,7 +6,7 @@ import "./navbar.css";
 function Navbar() {
   return (
     <nav className="NavbarItems">
-      <Link to="/" className="navbar-logo">
+      <Link to="/home" className="navbar-logo">
         FindTheWay
       </Link>
       <div className="navbar-menu-box">
