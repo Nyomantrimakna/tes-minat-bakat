@@ -9,7 +9,7 @@ function Detail() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const { name } = useParams();
-  const baseURL = `https://asia-southeast1-capstone-project-382606.cloudfunctions.net/app/api/info/fakultas/${name}/details`;
+  const baseURL = `https://asia-southeast1-capstone-project-382606.cloudfunctions.net/app/api/info/fakultas/${name}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
