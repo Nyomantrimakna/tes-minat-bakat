@@ -1,6 +1,8 @@
 .box-main {
   text-align: center;
   margin: 50px;
+  color: #383838;
+  font-family: "Poppins", sans-serif;
 }
 
 .link-to {
@@ -12,7 +14,7 @@
   margin: 0 auto;
   margin-top: 50px;
   width: 80%;
-  height: 350px;
+  height: 60vh;
   border-radius: 20px;
 }
 
@@ -31,6 +33,6 @@
 
 .text-panduan {
   background-color: #ffcdcd;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   border-radius: 0 0 20px 20px;
 }

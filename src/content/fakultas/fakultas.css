@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 .container-header {
+  color: #383838;
   text-align: center;
   padding: 20px;
   font-family: "Poppins", sans-serif;
@@ -27,9 +28,12 @@
 
 .header-list {
   text-align: center;
+  text-shadow: 5px 3px 8px #383838;
   justify-content: center;
   padding: 70px;
-  color: #383838;
+  color: #f3ebe2;
+  background-image: url(../../component/image/fakultas.jpg);
+  background-size: cover;
   background-color: #f3ebe2;
   border-radius: 20px 20px 0px 0px;
 }

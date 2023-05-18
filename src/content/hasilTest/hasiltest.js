@@ -21,7 +21,12 @@ function HasilTest() {
         <h1 className="nama-kepribadian">
           {hasilTest.result.nama_kepribadian}
         </h1>
-        ;
+        <div className="box-deskripsi">
+          <h1 className="header-deskripsi">
+            Penjelasan Tentang Kepribadian Anda
+          </h1>
+          <p className="deskripsi">{hasilTest.result.deskripsi}</p>
+        </div>
         <div className="box-rekomendasi">
           <h1 className="header-rekomendasi">
             Penjurusan Yang Sesuai Dengan Kepribadian Anda
@@ -29,12 +34,6 @@ function HasilTest() {
           <p className="rekomendasi-jurusan">
             {hasilTest.result.rekomendasi_jurusan}
           </p>
-        </div>
-        <div className="box-deskripsi">
-          <h1 className="header-deskripsi">
-            Penjelasan Tentang Kepribadian Anda
-          </h1>
-          <p className="deskripsi">{hasilTest.result.deskripsi}</p>
         </div>
       </div>
       <Footer />

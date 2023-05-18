@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../component/navbar/navbar";
 import Footer from "../../component/footer/footer";
 import { MenuItem } from "./menuItem";
-import InformationImage from "../../component/image/information_page.jpg";
+import InformationImage from "../../component/image/informasi.jpg";
 import "./information.css";
 
 const Information = () => {

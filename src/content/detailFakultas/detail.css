@@ -19,7 +19,7 @@
 }
 
 .head-detail-hero {
-  font-size: 20vh;
+  font-size: 5rem;
 }
 
 /*penjelasan section*/
@@ -30,20 +30,20 @@
 }
 
 .header-detail {
-  font-size: 7vh;
+  font-size: 2rem;
   padding-bottom: 30px;
   justify-content: center;
   text-align: center;
 }
 
 .paragraf-penjelasan {
-  font-size: 4vh;
+  font-size: 1.5rem;
 }
 
 /*program studi*/
 .program-studi {
   background-color: #f3ebe2;
-  margin: 5vh 10vh;
+  margin: 5vh 12vw;
   padding: 10vh 20vh;
   border-radius: 20px;
 }
@@ -56,5 +56,5 @@
 
 .list-prodi1,
 .list-prodi2 {
-  font-size: 5vh;
+  font-size: 1.5rem;
 }

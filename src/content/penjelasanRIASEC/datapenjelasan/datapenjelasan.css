@@ -5,9 +5,11 @@
 }
 
 .herosection-penjelasan {
+  background-image: url(../../../component/image/penjelasan.jpg);
+  background-size: cover;
   background-color: #f3ebe2;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +17,7 @@
 
 .header-herosection {
   color: #383838;
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 .header-herosection:hover {

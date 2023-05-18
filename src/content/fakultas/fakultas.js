@@ -38,13 +38,13 @@ function Fakultas() {
           <div className="container-list-fakultas">
             {data.map((item, index) => (
               <div key={item.id} className="fakultas-list">
-                <h1 className="header-list">FindTheWay</h1>
-                <div className="list-fakultas-name">
-                  <h2 className="fakultas-name">{item.nama_fakultas}</h2>
-                  <Link to={item.link} className="the-link">
+                <Link to={item.link} className="the-link">
+                  <h1 className="header-list">FindTheWay</h1>
+                  <div className="list-fakultas-name">
+                    <h2 className="fakultas-name">{item.nama_fakultas}</h2>
                     Lihat Selengkapnya
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

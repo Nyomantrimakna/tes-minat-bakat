@@ -74,6 +74,8 @@ function RIASECTest() {
       })
       .catch((error) => {
         console.log(error);
+        alert("Silahkan ulangi tes dengan jawaban yang jujur");
+        navigate("/test");
       });
     console.log(scores);
   };
