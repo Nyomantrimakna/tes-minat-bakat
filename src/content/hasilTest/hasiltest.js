@@ -7,7 +7,11 @@ function HasilTest() {
   const hasilTest = JSON.parse(localStorage.getItem("userTest"));
 
   if (!hasilTest) {
-    return <div>Loading...</div>;
+    return (
+      <h1 className="loading">
+        <span className="loader"></span>
+      </h1>
+    );
   }
 
   return (

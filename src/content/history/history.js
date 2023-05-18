@@ -29,7 +29,9 @@ function History() {
     <div>
       <Navbar />
       {loading ? (
-        <h1>LOADING....</h1>
+        <h1 className="loading">
+          <span className="loader"></span>
+        </h1>
       ) : (
         <div className="history-main-box">
           <div className="header-history">

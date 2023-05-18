@@ -23,7 +23,11 @@ function Profil() {
   //console.log(location.state.userData);
 
   if (!profilData) {
-    return <div>Loading...</div>;
+    return (
+      <h1 className="loading">
+        <span className="loader"></span>
+      </h1>
+    );
   }
 
   return (
