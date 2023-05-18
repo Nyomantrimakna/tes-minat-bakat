@@ -23,7 +23,7 @@ function RegisterForm() {
       );
 
       console.log(response.data);
-      console.log("selamat anda berhasil melakukan registrasi");
+      alert("Silahkan menuju halaman login");
       // do something after successful registration
     } catch (error) {
       console.error(error);
