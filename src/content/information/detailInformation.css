@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+.box-main-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 20vw;
+}
+
+.header-informasi {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.penjelasan-informasi {
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}

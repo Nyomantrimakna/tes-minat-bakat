@@ -18,7 +18,7 @@ const Information = () => {
         <h1>Panduan Masuk Perguruan Tinggi</h1>
         <p>Mari simak panduan yang sudah kita rangkum untuk kalian</p>
         {MenuItem.map((item, index) => (
-          <Link key={index} to={item.to} className="link-to">
+          <Link key={index} to="/detailInformation" className="link-to">
             <div className="box-panduan">
               <img
                 src={InformationImage}
