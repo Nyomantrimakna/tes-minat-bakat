@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./login.css";
 import LoginImg from "../../component/image/Loginpage_img_computer.png";
 
@@ -25,7 +27,9 @@ const Login = () => {
 
   const handleLogin = () => {
     if (!username || !password) {
-      alert("Username dan password harus diisi!");
+      toast.warning("Tolong Isi Dengan Username dan Password Yang Benar !", {
+        position: toast.POSITION.TOP_CENTER,
+      });
       return;
     }
 
@@ -42,17 +46,22 @@ const Login = () => {
         //navigate("/home",);
         //navigate("/profil", { state: { userData: response.data } });
         setShowModal(true);
-        console.log("selamat anda berhasil login");
+        toast.success("Tolong Isi Dengan Username dan Password Yang Benar !", {
+          position: toast.POSITION.TOP_CENTER,
+        });
       })
       .catch((error) => {
         // jika login gagal, tampilkan pesan kesalahan di sini
         console.log(error);
-        alert("Silahkan login dengan akun yang sudah terdaftar!");
+        toast.warning("Tolong Isi Dengan Akun Yang Sudah Terdaftar !", {
+          position: toast.POSITION.TOP_CENTER,
+        });
       });
   };
 
   return (
     <div className="login-content-box">
+      <ToastContainer />
       <div className="main-content-login">
         <h2 className="header-login">Login</h2>
         <form>

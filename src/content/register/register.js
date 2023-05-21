@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./register.css";
 import LoginImg from "../../component/image/Loginpage_img_computer.png";
 
@@ -23,11 +25,15 @@ function RegisterForm() {
       );
 
       console.log(response.data);
-      alert("Silahkan menuju halaman login");
+      toast.success("Silahkan Menuju Halaman Login !", {
+        position: toast.POSITION.TOP_CENTER,
+      });
       // do something after successful registration
     } catch (error) {
       console.error(error);
-      alert("gagal melakukan register");
+      toast.warning("Gagal Melakukan Register !", {
+        position: toast.POSITION.TOP_CENTER,
+      });
       // handle error case here
     }
   };
@@ -35,6 +41,7 @@ function RegisterForm() {
   return (
     <div className="signup-content-box">
       <div className="main-content-signup">
+        <ToastContainer />
         <h2 className="header-signup">Sign Up</h2>
         <form onSubmit={handleRegister}>
           <div className="email-input-box">
