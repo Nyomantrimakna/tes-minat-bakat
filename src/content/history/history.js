@@ -57,7 +57,9 @@ function History() {
                     </p>
                     <p className="item-parameter">Artistic : {item.data.A}</p>
                     <p className="item-parameter">Social : {item.data.S}</p>
-                    <p className="item-parameter">Enterprising{item.data.E}</p>
+                    <p className="item-parameter">
+                      Enterprising : {item.data.E}
+                    </p>
                     <p className="item-parameter">
                       Conventional : {item.data.C}
                     </p>
